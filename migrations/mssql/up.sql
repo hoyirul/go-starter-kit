@@ -1,0 +1,20 @@
+-- Table: users
+CREATE TABLE users (
+    id UNIQUEIDENTIFIER PRIMARY KEY,
+    name NVARCHAR(255) NOT NULL,
+    email NVARCHAR(255) NOT NULL UNIQUE,
+    password NVARCHAR(255) NOT NULL,
+    created_at DATETIME DEFAULT GETDATE(),
+    updated_at DATETIME DEFAULT GETDATE()
+);
+
+-- Table: products
+CREATE TABLE products (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    user_id UNIQUEIDENTIFIER NOT NULL,
+    name NVARCHAR(255) NOT NULL,
+    price DECIMAL(10,2) NOT NULL,
+    created_at DATETIME DEFAULT GETDATE(),
+    updated_at DATETIME DEFAULT GETDATE(),
+    CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
