@@ -1,10 +1,11 @@
 package handlers
 
 import (
-	"go-starter-kit/internal/models"
-	service "go-starter-kit/internal/services"
-	"go-starter-kit/utils"
 	"net/http"
+
+	"github.com/hoyirul/go-starter-kit/internal/models"
+	service "github.com/hoyirul/go-starter-kit/internal/services"
+	"github.com/hoyirul/go-starter-kit/utils"
 
 	"github.com/gin-gonic/gin"
 )

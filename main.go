@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"go-starter-kit/config"
-	"go-starter-kit/pkg/logger"
-	"go-starter-kit/routes"
+
+	"github.com/hoyirul/go-starter-kit/config"
+	"github.com/hoyirul/go-starter-kit/pkg/logger"
+	"github.com/hoyirul/go-starter-kit/routes"
 
 	"log"
 	"os"

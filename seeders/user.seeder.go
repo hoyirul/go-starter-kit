@@ -1,7 +1,7 @@
 package seeders
 
 import (
-	"go-starter-kit/internal/models"
+	"github.com/hoyirul/go-starter-kit/internal/models"
 
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"

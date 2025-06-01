@@ -1,9 +1,9 @@
 package repository
 
 import (
-	"go-starter-kit/config"
-	"go-starter-kit/internal/models"
-	"go-starter-kit/utils"
+	"github.com/hoyirul/go-starter-kit/config"
+	"github.com/hoyirul/go-starter-kit/internal/models"
+	"github.com/hoyirul/go-starter-kit/utils"
 
 	"github.com/gin-gonic/gin"
 )

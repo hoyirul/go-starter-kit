@@ -51,6 +51,33 @@ If you prefer to run the application with Docker, you can use the provided `dock
    ```
 2. Access the application at `http://localhost:8080`.
 
+### Make a Tests with Gomock
+To ensure the application works as expected, you can run the provided tests. The tests are located in the `tests` directory and cover various aspects of the API functionality.
+1. Make mocks for the tests e.g:
+   ```bash
+   mockgen -source=internal/repository/auth.repository.go -destination=mocks/services/auth.repository.mock.go -package=mocks
+   ```
+2. Then make tests file for example:
+   ```go
+   package tests
+
+   import (
+       "testing"
+       "github.com/stretchr/testify/assert"
+       "github.com/yourusername/yourproject/internal/repository/mocks"
+       "github.com/golang/mock/gomock"
+   )
+
+   func TestExample(t *testing.T) {
+       ctrl := gomock.NewController(t)
+       defer ctrl.Finish()
+
+       mockRepo := mocks.NewMockAuthRepository(ctrl)
+       // Set expectations and call methods on mockRepo
+       assert.NotNil(t, mockRepo)
+   }
+   ```
+
 ### Running Tests
 To run the tests, you can use the following command:
 ```bash

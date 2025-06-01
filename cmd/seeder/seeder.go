@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"go-starter-kit/pkg/logger"
 	"os"
 	"strings"
 
-	"go-starter-kit/config"
-	"go-starter-kit/seeders"
+	"github.com/hoyirul/go-starter-kit/pkg/logger"
+
+	"github.com/hoyirul/go-starter-kit/config"
+	"github.com/hoyirul/go-starter-kit/seeders"
 )
 
 func main() {

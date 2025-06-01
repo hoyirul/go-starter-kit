@@ -2,9 +2,10 @@ package services
 
 import (
 	"errors"
-	"go-starter-kit/internal/models"
-	"go-starter-kit/internal/repository"
-	"go-starter-kit/utils"
+
+	"github.com/hoyirul/go-starter-kit/internal/models"
+	"github.com/hoyirul/go-starter-kit/internal/repository"
+	"github.com/hoyirul/go-starter-kit/utils"
 )
 
 type AuthService interface {

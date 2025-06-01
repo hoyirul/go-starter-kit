@@ -3,17 +3,18 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	"go-starter-kit/pkg/logger"
 	"io/ioutil"
 	"os"
 	"strings"
+
+	"github.com/hoyirul/go-starter-kit/pkg/logger"
 
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/lib/pq"
 	_ "github.com/mattn/go-sqlite3"
 	_ "gorm.io/driver/sqlserver"
 
-	"go-starter-kit/config"
+	"github.com/hoyirul/go-starter-kit/config"
 )
 
 func main() {

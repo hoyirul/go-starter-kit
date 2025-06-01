@@ -2,14 +2,16 @@ package handlers
 
 import (
 	"fmt"
-	"go-starter-kit/internal/models"
-	"go-starter-kit/internal/services"
-	"go-starter-kit/utils"
 	"net/http"
 
-	"go-starter-kit/config"
+	"github.com/hoyirul/go-starter-kit/internal/models"
+	"github.com/hoyirul/go-starter-kit/internal/services"
+	"github.com/hoyirul/go-starter-kit/utils"
+
 	"strings"
 	"time"
+
+	"github.com/hoyirul/go-starter-kit/config"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"

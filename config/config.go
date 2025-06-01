@@ -10,7 +10,7 @@ import (
 	"gorm.io/driver/sqlserver"
 	"gorm.io/gorm"
 
-	"go-starter-kit/pkg/logger"
+	"github.com/hoyirul/go-starter-kit/pkg/logger"
 
 	"github.com/joho/godotenv"
 )

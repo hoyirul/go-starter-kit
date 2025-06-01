@@ -1,11 +1,11 @@
 package routes
 
 import (
-	handler "go-starter-kit/internal/handlers"
-	"go-starter-kit/internal/repository"
-	service "go-starter-kit/internal/services"
+	handler "github.com/hoyirul/go-starter-kit/internal/handlers"
+	"github.com/hoyirul/go-starter-kit/internal/repository"
+	service "github.com/hoyirul/go-starter-kit/internal/services"
 
-	"go-starter-kit/pkg/middlewares"
+	"github.com/hoyirul/go-starter-kit/pkg/middlewares"
 
 	"github.com/gin-gonic/gin"
 )

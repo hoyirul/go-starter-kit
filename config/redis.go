@@ -2,9 +2,10 @@ package config
 
 import (
 	"context"
-	"go-starter-kit/pkg/logger"
 	"os"
 	"time"
+
+	"github.com/hoyirul/go-starter-kit/pkg/logger"
 
 	"github.com/redis/go-redis/v9"
 )

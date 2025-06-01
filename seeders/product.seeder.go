@@ -1,7 +1,7 @@
 package seeders
 
 import (
-	"go-starter-kit/internal/models"
+	"github.com/hoyirul/go-starter-kit/internal/models"
 
 	"gorm.io/gorm"
 )

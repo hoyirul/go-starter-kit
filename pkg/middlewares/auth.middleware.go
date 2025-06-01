@@ -1,11 +1,12 @@
 package middlewares
 
 import (
-	"go-starter-kit/config"
-	"go-starter-kit/utils"
-	"go-starter-kit/internal/services"
 	"net/http"
 	"strings"
+
+	"github.com/hoyirul/go-starter-kit/config"
+	"github.com/hoyirul/go-starter-kit/internal/services"
+	"github.com/hoyirul/go-starter-kit/utils"
 
 	"github.com/gin-gonic/gin"
 	"github.com/redis/go-redis/v9"

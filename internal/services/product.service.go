@@ -1,9 +1,9 @@
 package services
 
 import (
-	"go-starter-kit/internal/models"
-	"go-starter-kit/internal/repository"
-	"go-starter-kit/utils"
+	"github.com/hoyirul/go-starter-kit/internal/models"
+	"github.com/hoyirul/go-starter-kit/internal/repository"
+	"github.com/hoyirul/go-starter-kit/utils"
 
 	"github.com/gin-gonic/gin"
 )

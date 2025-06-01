@@ -1,10 +1,11 @@
 package handlers
 
 import (
-	"go-starter-kit/internal/models"
-	"go-starter-kit/internal/services"
-	"go-starter-kit/utils"
 	"net/http"
+
+	"github.com/hoyirul/go-starter-kit/internal/models"
+	"github.com/hoyirul/go-starter-kit/internal/services"
+	"github.com/hoyirul/go-starter-kit/utils"
 
 	validation "github.com/go-ozzo/ozzo-validation"
 
