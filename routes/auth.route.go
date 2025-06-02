@@ -20,6 +20,7 @@ func AuthRoutes(rg *gin.RouterGroup) {
 	{
 		auth.POST("/register", authHandler.Register)
 		auth.POST("/login", authHandler.Login)
+		auth.GET("/profile", middlewares.JWTAuthMiddleware(authService), authHandler.GetUserProfile)
 		auth.POST("/logout", middlewares.JWTAuthMiddleware(authService), authHandler.Logout)
 	}
 }

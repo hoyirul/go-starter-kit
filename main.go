@@ -18,6 +18,7 @@ func main() {
 	config.InitTimezone()
 	config.InitDB()
 	config.InitRedis()
+
 	defer config.CloseDB()
 	defer config.CloseRedis()
 
@@ -46,9 +47,9 @@ List untuk besok yang harus dikerjakan:
 	1. Auth JWT √
 	2. Middleware √
 	3. Swagger
-	4. Logging
+	4. Logging √
 	5. Error Handling
-	6. Unit Testing
+	6. Unit Testing √
 	7. Integration Testing
 	8. Rate Limiting
 	9. CORS

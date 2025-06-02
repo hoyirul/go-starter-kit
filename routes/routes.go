@@ -5,10 +5,14 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
+	"github.com/hoyirul/go-starter-kit/pkg/middlewares"
 )
 
 func SetupRouter() *gin.Engine {
 	r := gin.Default()
+
+	// Set up CORS middleware
+	r.Use(middlewares.CORSMiddleware())
 
 	apiVersion := os.Getenv("API_VERSION")
 	if apiVersion == "" {
